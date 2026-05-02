@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contribuez aux actions et projets de développement portés par ADEBAL.">
+  <title>ADEBAL | Contribuer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contribute">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Logo ADEBAL">
+        <span>ADEBAL</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="projects.html">Projets</a>
+        <a href="news.html">Actualités</a>
+        <a href="community.html">La communauté</a>
+        <a class="btn btn-gold nav-cta active-cta" href="contribute.html">❤ Contribuer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-contribute">
+      <div class="container">
+        <span class="eyebrow">Contribuer</span>
+        <h1>Soutenir les projets et les actions d’ADEBAL</h1>
+        <p>Choisissez une contribution libre ou orientez votre soutien vers un projet précis du village.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contribution-layout">
+        <article class="content-card">
+          <span class="eyebrow">Options</span>
+          <h2>Formes de soutien</h2>
+          <div class="option-list">
+            <div class="option-item">
+              <h3>Don libre</h3>
+              <p>Une contribution flexible pour soutenir les priorités globales de l’association.</p>
+            </div>
+            <div class="option-item">
+              <h3>Par projet</h3>
+              <p>Une contribution ciblée vers un chantier spécifique suivi par ADEBAL.</p>
+            </div>
+          </div>
+        </article>
+
+        <form class="ui-form donation-form" data-validate>
+          <h2>Simuler une contribution</h2>
+          <label for="donor-name">Nom</label>
+          <input id="donor-name" name="name" type="text" placeholder="Votre nom complet" required>
+
+          <label for="donation-amount">Montant</label>
+          <input id="donation-amount" name="amount" type="number" min="1" placeholder="Ex: 25000" required>
+
+          <label for="donation-target">Type de contribution</label>
+          <select id="donation-target" name="target" required>
+            <option value="">Sélectionner</option>
+            <option value="libre">Don libre</option>
+            <option value="pont">Travaux du Pont de Nkong</option>
+            <option value="cooperative">Rénovation de la coopérative</option>
+            <option value="tribune">Construction de la tribune</option>
+            <option value="fomenlepe">Construction du lieu sacré Fomenlepe</option>
+          </select>
+
+          <fieldset>
+            <legend>Méthode de paiement</legend>
+            <label class="inline-option"><input type="radio" name="payment" value="mobile-money" required> Mobile Money</label>
+            <label class="inline-option"><input type="radio" name="payment" value="orange-money" required> Orange Money</label>
+            <label class="inline-option"><input type="radio" name="payment" value="virement" required> Virement</label>
+          </fieldset>
+
+          <button class="btn btn-gold full-width" type="submit">Valider la simulation</button>
+          <p class="form-feedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="Logo ADEBAL">
+          <span>ADEBAL</span>
+        </a>
+        <p>Contribuer à la transformation durable du village Balefock.</p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="projects.html">Projets</a></li>
+          <li><a href="community.html">La communauté</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:contact@adebal.org">contact@adebal.org</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="current-year"></span> ADEBAL. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

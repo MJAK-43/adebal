@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Espace membres, organisation, galerie, documents et contact de la communauté ADEBAL.">
+  <title>ADEBAL | La communauté</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="community">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Logo ADEBAL">
+        <span>ADEBAL</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="projects.html">Projets</a>
+        <a href="news.html">Actualités</a>
+        <a class="active" href="community.html">La communauté</a>
+        <a class="btn btn-gold nav-cta" href="contribute.html">❤ Contribuer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-community">
+      <div class="container">
+        <span class="eyebrow">La communauté ADEBAL</span>
+        <h1>Un espace commun pour s’organiser, partager et agir</h1>
+        <p>Cette page rassemble les accès membres, la gouvernance, les médias, les documents et les contacts utiles.</p>
+      </div>
+    </section>
+
+    <section class="section" id="membership">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Espace membres</span>
+            <h2>Interface de connexion et d’inscription</h2>
+          </div>
+        </div>
+        <div class="form-grid">
+          <form class="ui-form" data-validate>
+            <h3>Connexion</h3>
+            <label for="login-email">Email</label>
+            <input id="login-email" name="email" type="email" placeholder="votre@email.com" required>
+            <label for="login-password">Mot de passe</label>
+            <input id="login-password" name="password" type="password" placeholder="Votre mot de passe" required minlength="6">
+            <button class="btn btn-primary full-width" type="submit">Se connecter</button>
+            <p class="form-feedback" aria-live="polite"></p>
+          </form>
+
+          <form class="ui-form" data-validate>
+            <h3>Inscription</h3>
+            <label for="register-name">Nom complet</label>
+            <input id="register-name" name="name" type="text" placeholder="Votre nom" required>
+            <label for="register-email">Email</label>
+            <input id="register-email" name="email" type="email" placeholder="votre@email.com" required>
+            <label for="register-password">Mot de passe</label>
+            <input id="register-password" name="password" type="password" placeholder="Minimum 6 caractères" required minlength="6">
+            <button class="btn btn-gold full-width" type="submit">Créer un compte</button>
+            <p class="form-feedback" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Organisation</span>
+            <h2>Les organes de l’association</h2>
+          </div>
+        </div>
+        <div class="org-grid">
+          <article class="info-block">
+            <h3>Comité des sages</h3>
+            <p>Référence morale et conseil sur les grandes orientations.</p>
+          </article>
+          <article class="info-block">
+            <h3>Assemblée générale</h3>
+            <p>Cadre principal de délibération et de validation communautaire.</p>
+          </article>
+          <article class="info-block">
+            <h3>Bureau exécutif national</h3>
+            <p>Coordination opérationnelle, suivi des projets et animation des actions.</p>
+          </article>
+          <article class="info-block">
+            <h3>Commission de contrôle</h3>
+            <p>Veille à la transparence, au suivi financier et à la bonne gouvernance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Galerie</span>
+            <h2>Images et vidéos de la communauté</h2>
+          </div>
+        </div>
+        <div class="gallery-preview community-gallery">
+          <button class="gallery-tile tall" type="button" data-modal-image="assets/images/projects/pont-nkong/pont-nkong-10.jpeg">
+            <img src="assets/images/projects/pont-nkong/pont-nkong-10.jpeg" alt="Pont de Nkong">
+          </button>
+          <button class="gallery-tile" type="button" data-modal-image="assets/images/projects/cooperative-chefferie/cooperative-1.jpeg">
+            <img src="assets/images/projects/cooperative-chefferie/cooperative-1.jpeg" alt="Coopérative">
+          </button>
+          <button class="gallery-tile" type="button" data-modal-image="assets/images/projects/fomenlepe/fomenlepe-6.jpeg">
+            <img src="assets/images/projects/fomenlepe/fomenlepe-6.jpeg" alt="Fomenlepe">
+          </button>
+          <button class="gallery-tile wide" type="button" data-modal-image="assets/images/projects/tribune-chefferie/tribune-3.jpeg">
+            <img src="assets/images/projects/tribune-chefferie/tribune-3.jpeg" alt="Tribune">
+          </button>
+        </div>
+        <div class="video-grid compact-videos">
+          <video controls preload="metadata">
+            <source src="assets/videos/video-1.mp4" type="video/mp4">
+          </video>
+          <video controls preload="metadata">
+            <source src="assets/videos/video-2.mp4" type="video/mp4">
+          </video>
+          <video controls preload="metadata">
+            <source src="assets/videos/video-3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container docs-contact-grid">
+        <article class="content-card">
+          <span class="eyebrow">Documents</span>
+          <h2>Ressources utiles</h2>
+          <ul class="docs-list">
+            <li><a href="structuredesite.pdf" target="_blank" rel="noopener">Structure du site ADEBAL (PDF)</a></li>
+            <li><a href="structuredesite.pdf" target="_blank" rel="noopener">Statuts et orientation du projet web</a></li>
+            <li><a href="structuredesite.pdf" target="_blank" rel="noopener">Document de référence communautaire</a></li>
+          </ul>
+        </article>
+
+        <article class="content-card">
+          <span class="eyebrow">Contact</span>
+          <h2>Entrer en relation avec ADEBAL</h2>
+          <form class="ui-form compact-form" data-validate>
+            <label for="contact-name">Nom</label>
+            <input id="contact-name" name="name" type="text" placeholder="Votre nom" required>
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder="Votre message" required minlength="10"></textarea>
+            <button class="btn btn-primary full-width" type="submit">Envoyer</button>
+            <p class="form-feedback" aria-live="polite"></p>
+          </form>
+          <div class="map-placeholder">
+            <span>Google Map placeholder</span>
+            <p>Balefock, Cameroun</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="Logo ADEBAL">
+          <span>ADEBAL</span>
+        </a>
+        <p>Organisation, médias, documents et espace membres de la communauté Balefock.</p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="projects.html">Projets</a></li>
+          <li><a href="news.html">Actualités</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:contact@adebal.org">contact@adebal.org</a></li>
+          <li><a href="tel:+237600000000">+237 600 00 00 00</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="current-year"></span> ADEBAL. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="image-modal" aria-hidden="true" role="dialog" aria-label="Agrandissement de l'image">
+    <button class="modal-close" type="button" aria-label="Fermer">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Détails d'un projet de développement ADEBAL à Balefock.">
+  <title>ADEBAL | Détail du projet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="project-detail">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Logo ADEBAL">
+        <span>ADEBAL</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a class="active" href="projects.html">Projets</a>
+        <a href="news.html">Actualités</a>
+        <a href="community.html">La communauté</a>
+        <a class="btn btn-gold nav-cta" href="contribute.html">❤ Contribuer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="project-detail-page">
+    <section class="page-hero page-hero-detail">
+      <div class="container detail-hero-grid">
+        <div>
+          <span class="eyebrow" id="project-category">Projet ADEBAL</span>
+          <h1 id="project-title">Projet de développement</h1>
+          <p id="project-description">Chargement des détails du projet…</p>
+          <div class="detail-badges">
+            <span class="status-pill" id="project-status">En cours</span>
+            <span class="budget-pill" id="project-budget">Budget</span>
+          </div>
+        </div>
+        <div class="detail-hero-image">
+          <img id="project-hero-image" src="assets/images/projects/pont-nkong/pont-nkong-1.jpeg" alt="Projet ADEBAL">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container detail-grid">
+        <article class="content-card">
+          <span class="eyebrow">Objectifs</span>
+          <h2>Ce que ce projet doit produire</h2>
+          <ul class="clean-list" id="project-objectives"></ul>
+        </article>
+        <aside class="content-card accent-card">
+          <span class="eyebrow">Avancement</span>
+          <h2>Suivi du chantier</h2>
+          <div class="progress-shell">
+            <div class="progress-meta">
+              <strong id="project-progress-label">0%</strong>
+              <span id="project-status-text">Statut du projet</span>
+            </div>
+            <div class="progress-bar">
+              <span class="progress-value" id="project-progress-bar" data-progress="0"></span>
+            </div>
+          </div>
+          <a class="btn btn-gold full-width" href="contribute.html">Contribuer à ce projet</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Galerie injectée dynamiquement selon le projet -->
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Galerie du projet</span>
+            <h2>Images du terrain</h2>
+          </div>
+        </div>
+        <div class="detail-gallery" id="project-gallery"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Vidéos</span>
+            <h2>Suivi visuel des activités</h2>
+          </div>
+        </div>
+        <div class="video-grid" id="project-videos"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="Logo ADEBAL">
+          <span>ADEBAL</span>
+        </a>
+        <p>Suivi détaillé des projets de développement du village Balefock.</p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="projects.html">Tous les projets</a></li>
+          <li><a href="contribute.html">Contribuer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:contact@adebal.org">contact@adebal.org</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="current-year"></span> ADEBAL. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="image-modal" aria-hidden="true" role="dialog" aria-label="Agrandissement de l'image">
+    <button class="modal-close" type="button" aria-label="Fermer">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
